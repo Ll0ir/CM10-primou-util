@@ -47,11 +47,6 @@
         path="device/htc/msm7x30-common" 
         revision="jb"
         remote="Ll0ir" />
-		
-	<remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio"/>
-    <project path="hardware/qcom/audio"
-        remote="Ll0ir"
-        revision="jellybean"
-        name="android_hardware_qcom_audio"/>	
+
 		
   </manifest>
