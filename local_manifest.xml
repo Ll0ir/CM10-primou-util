@@ -3,15 +3,25 @@
 
     <remote name="Ll0ir"
         fetch="https://github.com/Ll0ir/"/>
-		
-	<remote name="maxwen"
-        fetch="https://github.com/maxwen/"/>
 
+	<remote  name="aosp"
+         fetch="https://android.googlesource.com" />
+		
     <project name="android_vendor_htc_primou" 
         path="vendor/htc/primou" 
         revision="JB-TESTING"
         remote="Ll0ir" />
 		
+    <project name="protou" 
+        path="device/htc/protou" 
+        revision="master"
+        remote="Ll0ir" />
+		
+	<project name="android_vendor_htc_protou" 
+        path="vendor/htc/protou" 
+        revision="master"
+        remote="Ll0ir" />	
+				
     <project name="android_vendor_qcom_proprietary" 
         path="vendor/qcom/proprietary" 
         revision="jellybean"
@@ -41,48 +51,10 @@
         revision="jb"
         remote="Ll0ir" />
 		
-	 <remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base"/>
-    <project path="frameworks/base" 
-        remote="Ll0ir"
-        revision="jellybean"
-        name="base" />	
-		
-		<remove-project name="CyanogenMod/android_packages_apps_Camera" path="packages/apps/Camera"/>
-    <project path="packages/apps/Camera" 
-        remote="Ll0ir"
-        revision="jb-testing-primou"
-        name="android_packages_apps_Camera" />
-
-    <remove-project name="CyanogenMod/android_packages_apps_Mms" path="packages/apps/Mms"/>
-    <project path="packages/apps/Mms" 
-        remote="Ll0ir"        
-        revision="jellybean"
-        name="android_packages_apps_Mms" />
-
-    <remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings"/>
-    <project path="packages/apps/Settings" 
-        remote="Ll0ir"
-        revision="jellybean"
-        name="android_packages_apps_Settings" />
-		
-	<remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display"/>
-    <project path="hardware/qcom/display" 
-        remote="Ll0ir"
-        revision="jellybean"
-        name="android_hardware_qcom_display" />
-		
-	<remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native"/>
-    <project path="frameworks/native" 
-        remote="Ll0ir"
-        revision="jellybean"
-        name="android_frameworks_native" />	
-		
-	 <remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio"/>
+	<remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio"/>
     <project path="hardware/qcom/audio"
-        remote="maxwen"
+        remote="Ll0ir"
         revision="jellybean"
         name="android_hardware_qcom_audio"/>	
-		
-
 		
   </manifest>
