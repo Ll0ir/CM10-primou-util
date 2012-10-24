@@ -3,9 +3,6 @@
 
     <remote name="Ll0ir"
         fetch="https://github.com/Ll0ir/"/>
-
-	<remote  name="aosp"
-         fetch="https://android.googlesource.com" />
 		
     <project name="android_vendor_htc_primou" 
         path="vendor/htc/primou" 
