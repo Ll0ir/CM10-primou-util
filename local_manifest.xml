@@ -4,6 +4,9 @@
     <remote name="Ll0ir"
         fetch="https://github.com/Ll0ir/"/>
 		
+	<remote name="goo"
+        fetch="https://github.com/solarnz/"/>
+		
     <project name="android_vendor_htc_primou" 
         path="vendor/htc/primou" 
         revision="JB-TESTING"
@@ -12,6 +15,11 @@
     <project name="protou" 
         path="device/htc/protou" 
         revision="master"
+        remote="Ll0ir" />
+		
+	 <project name="primou" 
+        path="device/htc/primou" 
+        revision="jb-testing"
         remote="Ll0ir" />
 		
 	<project name="android_vendor_htc_protou" 
@@ -24,29 +32,48 @@
         revision="jellybean"
         remote="Ll0ir" />
 		
-	<project path="packages/apps/FileExplorer" 
-        name="AOKP-SGS2/android_packages_apps_FileExplorer" 
-        revision="ics" />
-		
-    <project name="primou" 
-        path="device/htc/primou" 
-        revision="jb-testing"
-        remote="Ll0ir" />
-
-    <project name="primoc" 
-        path="device/htc/primoc" 
-        revision="jellybean"
-        remote="Ll0ir" />
-
-    <project name="android_vendor_htc_primoc" 
-        path="vendor/htc/primoc" 
-        revision="patch-1"
-        remote="Ll0ir" />
-
     <project name="msm7x30-common" 
         path="device/htc/msm7x30-common" 
         revision="jb"
         remote="Ll0ir" />
-
 		
+	<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery"/>
+    <project path="bootable/recovery"
+        remote="Ll0ir"
+        revision="master"
+        name="Team-Win-Recovery-Project"/>
+		
+    <project path="packages/MusicFx"
+        remote="aosp"
+        revision="master"
+        name="platform/packages/apps/MusicFX"/>
+		
+    <project path="packages/apps/Music"
+        remote="aosp"
+        revision="master"
+        name="platform/packages/apps/Music"/>
+		
+	<project name="GooManager_prebuilt"
+	         path="packages/apps/GooManager"
+        revision="master"
+        remote="goo" />
+		
+	<remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base"/>
+    <project path="frameworks/base"
+        remote="Ll0ir"
+        revision="jellybean"
+        name="base"/>
+		
+	<remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native"/>
+    <project path="frameworks/base"
+        remote="Ll0ir"
+        revision="jellybean"
+		name="native"/>
+		
+     <remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings"/>
+    <project path="packages/apps/Settings"
+        remote="Ll0ir"
+        revision="jellybean"
+        name="Settings"/>
+				
   </manifest>
