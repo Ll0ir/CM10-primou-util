@@ -8,7 +8,7 @@
         fetch="https://github.com/solarnz/"/>
 		
 	<remote name="uj"
-        fetch="https://github.com/solarnz/"/>
+        fetch="https://github.com/U-Jelly/"/>
 		
     <project name="android_vendor_htc_primou" 
         path="vendor/htc/primou" 
@@ -22,9 +22,9 @@
 		
 	<remove-project name="CyanogenMod/android_vendor_cm" path="vendor/cm"/>
     <project name="vendor_cm" 
-        path="vendor/uj" 
+        path="vendor/cm" 
         revision="master"
-        remote="goo" />
+        remote="uj" />
 				
     <project name="android_vendor_qcom_proprietary" 
         path="vendor/qcom/proprietary" 
@@ -45,9 +45,15 @@
         remote="aosp"
         revision="master"
         name="platform/packages/apps/Music"/>
+	
+	<remove-project name="CyanogenMod/android_packages_apps_Phone" path="packages/apps/Phone"/>
+	<project path="packages/apps/Phone"
+        remote="Ll0ir"
+        revision="jellybean"
+        name="android_packages_apps_Phone"/>
 		
 	<project name="GooManager_prebuilt"
-	         path="packages/apps/GooManager"
+	    path="packages/apps/GooManager"
         revision="master"
         remote="goo" />
 		
@@ -58,7 +64,7 @@
         name="base"/>
 		
 	<remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native"/>
-    <project path="frameworks/base"
+    <project path="frameworks/native"
         remote="Ll0ir"
         revision="jellybean"
 		name="native"/>
